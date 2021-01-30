@@ -27,6 +27,11 @@ public class CyclicRotation {
     public int[] solution(int[] A, int K) {
 
         int[] rotateArray = new int[A.length];
+
+        if (A.length == 0){
+            return A;
+        }
+
         K = K % A.length;
 
         if(K == 0) {
