@@ -1,4 +1,4 @@
-package pl.rozwalka.codility.binarygap;
+package pl.rozwalka.codility.iterations;
 
 import java.util.Arrays;
 
