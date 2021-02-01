@@ -1,21 +1,23 @@
 package pl.rozwalka.codility.counting.elements;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 public class PermCheck {
     public static void main(String[] args) {
 
         int[] A = {4, 1, 3, 2};
-        int len = A.length;
-        boolean[] bool = new boolean[A.length +1];
+        boolean[] bool = new boolean[A.length];
+        int max = Arrays.stream(A).max().getAsInt();
+
+        if (max != A.length) {
+            System.out.println("0");
+        }
 
         for (int i = 0; i < A.length; i++) {
-            bool[A[i]-1] = true;
+            bool[A[i] - 1] = true;
         }
-        for (int i=0; i <A.length; i++){
-            if(!bool[i]){
+        for (int i = 0; i < A.length; i++) {
+            if (!bool[i]) {
                 System.out.println("0");
             }
         }
@@ -24,14 +26,17 @@ public class PermCheck {
     }
 
     public int solution(int[] A) {
+        boolean[] bool = new boolean[A.length];
+        int max = Arrays.stream(A).max().getAsInt();
 
-        boolean[] bool = new boolean[A.length +1];
-
-        for (int i = 0; i < A.length; i++) {
-            bool[A[i] -1] = true;
+        if (max != A.length) {
+            return 0;
         }
-        for (int i=0; i <A.length; i++){
-            if(!bool[i]){
+        for (int i = 0; i < A.length; i++) {
+            bool[A[i] - 1] = true;
+        }
+        for (int i = 0; i < A.length; i++) {
+            if (!bool[i]) {
                 return 0;
             }
         }
