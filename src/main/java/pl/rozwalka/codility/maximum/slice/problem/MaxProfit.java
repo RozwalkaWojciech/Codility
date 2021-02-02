@@ -3,7 +3,6 @@ package pl.rozwalka.codility.maximum.slice.problem;
 public class MaxProfit {
     public static void main(String[] args) {
 
-        //expected 3 got 6
         int[] A = {8, 9, 3, 6, 1, 2};  //  23171, 21011, 21123, 21366, 21013, 21367
 
         if (A.length < 2) {
