@@ -58,34 +58,3 @@ public class MaxProfit {
         return profit;
     }
 }
-
-
-import java.util.*;
-        import java.io.*;
-
-class Main {
-
-    public static String FindIntersection(String[] strArr) {
-
-        String s1 =  strArr[0];
-        String s2 =  strArr[1];
-
-        String[] split1 = s1.split[","];
-        String[] split2 = s1.split[","];
-
-        for (int i = 0; i < split1.length; i++) {
-            System.out.println(split[i]);
-        }
-
-        return strArr[0];
-    }
-
-    public static void main (String[] args) {
-        // keep this function call here
-        Scanner s = new Scanner(System.in);
-        System.out.print(FindIntersection(s.nextLine()));
-    }
-
-}
-
-https://coderbyte.com/editor/Find%20Intersection:Java
